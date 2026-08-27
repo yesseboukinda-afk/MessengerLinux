@@ -42,4 +42,21 @@
     <content_attribute id="social-chat">intense</content_attribute>
     <content_attribute id="social-info">intense</content_attribute>
   </content_rating>
+
+  <screenshots>
+    <screenshot type="default">
+      <caption>Messenger Linux sur le bureau Linux</caption>
+      <image>https://raw.githubusercontent.com/yesseboukinda-afk/MessengerLinux/v1.0.3/screenshots/messenger.png</image>
+    </screenshot>
+  </screenshots>
+
+  <releases>
+    <release version="1.0.3" date="2026-08-27">
+      <description>
+        <p>
+          Première version préparée pour la distribution via Flathub.
+        </p>
+      </description>
+    </release>
+  </releases>
 </component>

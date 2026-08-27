@@ -17,24 +17,14 @@ modules:
     buildsystem: simple
 
     build-commands:
-      - gcc main.c -o messenger $(pkg-config --cflags --libs gtk4 webkitgtk-6.0)
+      - gcc src/main.c -o messenger $(pkg-config --cflags --libs gtk4 webkitgtk-6.0)
       - install -Dm755 messenger /app/bin/messenger
-      - install -Dm644 io.github.yesseboukinda_afk.MessengerLinux.desktop /app/share/applications/io.github.yesseboukinda_afk.MessengerLinux.desktop
-      - install -Dm644 io.github.yesseboukinda_afk.MessengerLinux.png /app/share/icons/hicolor/512x512/apps/io.github.yesseboukinda_afk.MessengerLinux.png
-      - install -Dm644 io.github.yesseboukinda_afk.MessengerLinux.metainfo.xml /app/share/metainfo/io.github.yesseboukinda_afk.MessengerLinux.metainfo.xml
+      - install -Dm644 data/io.github.yesseboukinda_afk.MessengerLinux.desktop /app/share/applications/io.github.yesseboukinda_afk.MessengerLinux.desktop
+      - install -Dm644 icons/512x512/io.github.yesseboukinda_afk.MessengerLinux.png /app/share/icons/hicolor/512x512/apps/io.github.yesseboukinda_afk.MessengerLinux.png
+      - install -Dm644 data/io.github.yesseboukinda_afk.MessengerLinux.metainfo.xml /app/share/metainfo/io.github.yesseboukinda_afk.MessengerLinux.metainfo.xml
 
     sources:
-      - type: dir
-        path: src
-
-      - type: file
-        path: data/io.github.yesseboukinda_afk.MessengerLinux.desktop
-        dest-filename: io.github.yesseboukinda_afk.MessengerLinux.desktop
-
-      - type: file
-        path: icons/512x512/io.github.yesseboukinda_afk.MessengerLinux.png
-        dest-filename: io.github.yesseboukinda_afk.MessengerLinux.png
-
-      - type: file
-        path: data/io.github.yesseboukinda_afk.MessengerLinux.metainfo.xml
-        dest-filename: io.github.yesseboukinda_afk.MessengerLinux.metainfo.xml
+      - type: archive
+        url: https://github.com/yesseboukinda-afk/MessengerLinux/archive/refs/tags/v1.0.2.tar.gz
+        sha256: 713391cea779cdb24ac52a70600e38389879844f6ca3b8601751705db40304d8
+        strip-components: 1
