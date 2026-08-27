@@ -5,7 +5,9 @@
   <name>Messenger Linux</name>
   <summary>Client Linux non officiel pour Messenger</summary>
 
-  <developer_name>Yesse Boukinda</developer_name>
+<developer id="io.github.yesse">
+  <name>Yesse</name>
+</developer>
 <url type="homepage">https://github.com/yesseboukinda-afk/MessengerLinux</url>
 <url type="vcs-browser">https://github.com/yesseboukinda-afk/MessengerLinux</url>
 <url type="bugtracker">https://github.com/yesseboukinda-afk/MessengerLinux/issues</url>	
