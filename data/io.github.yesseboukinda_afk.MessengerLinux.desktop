@@ -2,7 +2,7 @@
 Name=Messenger Linux
 Comment=Client Linux non officiel pour Messenger
 Exec=messenger
-Icon=io.github.yesse.MessengerLinux
+Icon=io.github.yesseboukinda_afk.MessengerLinux
 Terminal=false
 Type=Application
 Categories=Network;InstantMessaging;

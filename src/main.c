@@ -29,7 +29,7 @@ int main(int argc, char **argv)
     int status;
 
     app = gtk_application_new(
-        "io.github.yesse.MessengerLinux",
+        "io.github.yesseboukinda_afk.MessengerLinux",
         G_APPLICATION_DEFAULT_FLAGS
     );
 

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <component type="desktop-application">
-  <id>io.github.yesse.MessengerLinux</id>
+  <id>io.github.yesseboukinda_afk.MessengerLinux</id>
 
   <name>Messenger Linux</name>
   <summary>Client Linux non officiel pour Messenger</summary>
 
-<developer id="io.github.yesse">
+<developer id="io.github.yesseboukinda-afk">
   <name>Yesse</name>
 </developer>
 <url type="homepage">https://github.com/yesseboukinda-afk/MessengerLinux</url>
@@ -31,7 +31,7 @@
   </categories>
 
   <launchable type="desktop-id">
-    io.github.yesse.MessengerLinux.desktop
+    io.github.yesseboukinda_afk.MessengerLinux.desktop
   </launchable>
 
   <provides>
