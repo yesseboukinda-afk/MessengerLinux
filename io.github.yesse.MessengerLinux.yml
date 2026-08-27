@@ -20,6 +20,7 @@ modules:
       - install -Dm755 messenger /app/bin/messenger
       - install -Dm644 io.github.yesse.MessengerLinux.desktop /app/share/applications/io.github.yesse.MessengerLinux.desktop
       - install -Dm644 io.github.yesse.MessengerLinux.png /app/share/icons/hicolor/512x512/apps/io.github.yesse.MessengerLinux.png
+      - install -Dm644 io.github.yesse.MessengerLinux.metainfo.xml /app/share/metainfo/io.github.yesse.MessengerLinux.metainfo.xml
 
 
     sources:
@@ -33,3 +34,6 @@ modules:
       - type: file
         path: icons/512x512/io.github.yesse.MessengerLinux.png
         dest-filename: io.github.yesse.MessengerLinux.png
+      - type: file
+        path: data/io.github.yesse.MessengerLinux.metainfo.xml
+        dest-filename: io.github.yesse.MessengerLinux.metainfo.xml
