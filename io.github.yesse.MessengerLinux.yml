@@ -1,0 +1,35 @@
+app-id: io.github.yesse.MessengerLinux
+runtime: org.gnome.Platform
+runtime-version: '49'
+sdk: org.gnome.Sdk
+
+command: messenger
+
+finish-args:
+  - --share=ipc
+  - --share=network
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+
+modules:
+  - name: messenger-linux
+    buildsystem: simple
+
+    build-commands:
+      - install -Dm755 messenger /app/bin/messenger
+      - install -Dm644 io.github.yesse.MessengerLinux.desktop /app/share/applications/io.github.yesse.MessengerLinux.desktop
+      - install -Dm644 io.github.yesse.MessengerLinux.png /app/share/icons/hicolor/512x512/apps/io.github.yesse.MessengerLinux.png
+
+
+    sources:
+      - type: file
+        path: messenger
+
+      - type: file
+        path: data/io.github.yesse.MessengerLinux.desktop
+        dest-filename: io.github.yesse.MessengerLinux.desktop
+
+      - type: file
+        path: icons/512x512/io.github.yesse.MessengerLinux.png
+        dest-filename: io.github.yesse.MessengerLinux.png

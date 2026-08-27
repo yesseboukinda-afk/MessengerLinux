@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>io.github.yesse.MessengerLinux</id>
+
+  <name>Messenger Linux</name>
+  <summary>Client Linux non officiel pour Messenger</summary>
+
+  <developer_name>Yesse Boukinda</developer_name>
+
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>MIT</project_license>
+
+  <description>
+    <p>
+      Messenger Linux est un client non officiel permettant d'utiliser
+      Messenger depuis une application de bureau Linux.
+    </p>
+    <p>
+      Ce projet est développé indépendamment et n'est pas affilié à
+      Meta Platforms, Inc. ou à Messenger.
+    </p>
+  </description>
+
+  <categories>
+    <category>Network</category>
+    <category>Chat</category>
+  </categories>
+
+  <launchable type="desktop-id">
+    io.github.yesse.MessengerLinux.desktop
+  </launchable>
+
+  <provides>
+    <binary>messenger</binary>
+  </provides>
+</component>
